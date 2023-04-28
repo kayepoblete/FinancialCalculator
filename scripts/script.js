@@ -3,11 +3,14 @@
 window.onload = init;
 
 function init(){
-    const calcBtn = document.getElementById("calcMortgageBtn");
-    calcBtn.onclick = onCalculateBtn;
+    const calcMortgageBtn = document.getElementById("calcMortgageBtn");
+    const calcCDValueBtn = document.getElementById("calcCDValueBtn");
+
+    calcMortgageBtn.onclick = onCalculateMortgageBtn;
+    calcCDValueBtn.onclick = onCalculateCDValueBtn;
 }
 
-function onCalculateBtn(){
+function onCalculateMortgageBtn(){
     var principalAmount = Number(document.getElementById("principalAmount").value);
     var interestRate = Number(document.getElementById("interestRate").value);
     var loanLength = Number(document.getElementById("loanLength").value);
@@ -22,3 +25,9 @@ function onCalculateBtn(){
 
 }
 
+function onCalculateCDValueBtn(){
+    var depositAmount = Number(document.getElementById("depositAmount").value);
+
+
+    // A = P(1+r/n)(nt)
+}
