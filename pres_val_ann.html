@@ -49,20 +49,22 @@
 <main>
     <div class="container">
         <form class="form-horizontal">
-            <div class="mt-3 mb-3">
+            <div class="form-group mt-3 mb-3">
                 <label for="paymentAmount" class="form-label">Payment amount: </label>
-                <input type="number"
-                  class="form-control" name="" id="paymentAmount" aria-describedby="helpId" placeholder="" autofocus>
+                <div class="input-group">
+                    <div class="input-group-addon"><i class="bi bi-currency-dollar"></i></div>
+                    <input class="form-control" id="paymentAmount" type="number" autofocus>
+                </div>
             </div>
             <div class="mb-3">
                 <label for="interestPVRate" class="form-label">Interest rate: </label>
                 <input type="number"
-                  class="form-control" name="" id="interestPVRate" aria-describedby="helpId" placeholder="">
+                  class="form-control" id="interestPVRate">
             </div>
             <div class="mb-3">
                 <label for="numYears" class="form-label">Number of years: </label>
                 <input type="number"
-                  class="form-control" name="" id="numYears" aria-describedby="helpId" placeholder="">
+                  class="form-control" id="numYears">
             </div>
     
             <!-- Calculate Button -->
@@ -75,7 +77,7 @@
                     <label class="control-label" for="presentValue">Present Value of Annuity: </label>
                     <div class="input-group">
                       <div class="input-group-addon"><i class="bi bi-currency-dollar"></i></div>
-                      <input class="form-control" id="presentValue" type="text" readonly/>
+                      <input class="form-control" id="presentValue" type="text" readonly>
                     </div>
                 </div>
             </div>

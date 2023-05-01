@@ -3,6 +3,10 @@ h1 {
     padding-top: 1%;
 }
 
+h6 {
+    text-align: center;
+}
+
 .form-horizontal{
     display:block;
     width:50%;
